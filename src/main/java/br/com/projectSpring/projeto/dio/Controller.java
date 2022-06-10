@@ -11,11 +11,12 @@ public class Controller {
 //    public String mensagem(){
 //        return "Spring Boot Web";
 //    }
+    @GetMapping("/")
+        public String mensagem(String nome){
+            return String.format("Spring Test, %s", nome);
+        }
     @GetMapping("/test")
         public String mensagem1(@RequestParam(name = "nome", defaultValue = "DIO") String nome) {
             return String.format("Bem Vindo, %s", nome);
     }
-//    public String mensagem1(String nome){
-//        return String.format("Spring Test, %s", nome);
-//    }
 }

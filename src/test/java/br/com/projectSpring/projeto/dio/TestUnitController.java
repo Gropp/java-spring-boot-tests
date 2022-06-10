@@ -10,7 +10,7 @@ public class TestUnitController {
     @Test
     public void testUnit(){
         Controller controller = new Controller();
-        String resultado = controller.mensagem1("DIO");
+        String resultado = controller.mensagem("DIO");
         assertEquals("Spring Test, DIO", resultado);
     }
 }
